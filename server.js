@@ -109,5 +109,6 @@ const server = app.listen(PORT, () => {
   logger.info(`Servidor escuchando en puerto ${PORT}`);
 });
 server.on("error", (error) => {
+  console.log(error);
   errorLogger.error(`Error en el servidor ${error}`);
 });
