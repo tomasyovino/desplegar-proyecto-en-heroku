@@ -4,7 +4,9 @@ import ProductsDAOMemory from "../DAO/product/ProductsDAOMemory.js";
 
 // const productsDAO = new ProductsDAOMongo();
 let productsDAO;
-switch (process.env.PERS) {
+const PERS = process.env.PERS || "mongodb";
+
+switch (PERS) {
     case "mongodb":
         productsDAO = ProductsDAOMongo.createInstance();
         break;
@@ -13,9 +15,6 @@ switch (process.env.PERS) {
         break;
     case "memory":
         productsDAO = ProductsDAOMemory.createInstance();
-        break;
-    default:
-        productsDAO = ProductsDAOMongo.createInstance();
         break;
 };
 

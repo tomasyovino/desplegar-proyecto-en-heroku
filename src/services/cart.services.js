@@ -3,7 +3,9 @@ import CartsDAOFile from "../DAO/cart/CartsDAOFile.js";
 import CartsDAOMemory from "../DAO/cart/CartsDAOMemory.js";
 
 let cartsDAO;
-switch (process.env.PERS) {
+const PERS = process.env.PERS || "mongodb";
+
+switch (PERS) {
     case "mongodb":
         cartsDAO = CartsDAOMongo.createInstance();
         break;
@@ -12,9 +14,6 @@ switch (process.env.PERS) {
         break;
     case "memory":
         cartsDAO = CartsDAOMemory.createInstance();
-        break;
-    default:
-        cartsDAO = CartsDAOMongo.createInstance();
         break;
 };
 

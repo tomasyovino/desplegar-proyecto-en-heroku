@@ -8,7 +8,9 @@ import dotenv from "dotenv";
 dotenv.config();
 
 let usersDAO;
-switch (process.env.PERS) {
+const PERS = process.env.PERS || "mongodb";
+
+switch (PERS) {
     case "mongodb":
         usersDAO = UsersDAOMongo.createInstance();
         break;
@@ -17,9 +19,6 @@ switch (process.env.PERS) {
         break;
     case "memory":
         usersDAO = UsersDAOMemory.createInstance();
-        break;
-    default:
-        usersDAO = UsersDAOMongo.createInstance();
         break;
 };
 
