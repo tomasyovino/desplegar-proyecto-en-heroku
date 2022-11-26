@@ -60,7 +60,7 @@ passport.deserializeUser(async (id, done) => {
 });
 
 /*----------- Motor de plantillas -----------*/
-app.set("views", path.join(path.dirname(""), "./src/views"));
+app.set("views", path.join(path.dirname(""), "./src/public/views"));
 app.engine(
   ".hbs",
   exphbs.engine({
