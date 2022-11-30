@@ -1,0 +1,37 @@
+[2022-11-27T00:35:24.970] [ERROR] error - RestException [Error]: Authenticate
+    at success (C:\Users\Tomy puto\Desktop\heroku\node_modules\twilio\lib\base\Version.js:135:15)
+    at Promise_then_fulfilled (C:\Users\Tomy puto\Desktop\heroku\node_modules\q\q.js:766:44)
+    at Promise_done_fulfilled (C:\Users\Tomy puto\Desktop\heroku\node_modules\q\q.js:835:31)
+    at Fulfilled.Fulfilled_dispatch [as dispatch] (C:\Users\Tomy puto\Desktop\heroku\node_modules\q\q.js:1229:9)
+    at Pending_become_eachMessage_task (C:\Users\Tomy puto\Desktop\heroku\node_modules\q\q.js:1369:30)
+    at RawTask.call (C:\Users\Tomy puto\Desktop\heroku\node_modules\asap\asap.js:40:19)
+    at flush (C:\Users\Tomy puto\Desktop\heroku\node_modules\asap\raw.js:50:29)
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+  status: 401,
+  code: 20003,
+  moreInfo: 'https://www.twilio.com/docs/errors/20003',
+  details: undefined
+}
+[2022-11-27T00:37:36.202] [ERROR] error - MongooseError: Query was already executed: User.findOne({ email: 'matias.yo@hotmail.it' })
+    at model.Query._wrappedThunk [as _findOne] (C:\Users\Tomy puto\Desktop\heroku\node_modules\mongoose\lib\helpers\query\wrapThunk.js:23:19)
+    at C:\Users\Tomy puto\Desktop\heroku\node_modules\kareem\index.js:426:25
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+  originalStack: 'Error\n' +
+    '    at model.Query._wrappedThunk [as _findOne] (C:\\Users\\Tomy puto\\Desktop\\heroku\\node_modules\\mongoose\\lib\\helpers\\query\\wrapThunk.js:27:28)\n' +
+    '    at C:\\Users\\Tomy puto\\Desktop\\heroku\\node_modules\\kareem\\index.js:426:25\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)'
+}
+[2022-11-27T00:38:06.667] [ERROR] error - RestException [Error]: Authenticate
+    at success (C:\Users\Tomy puto\Desktop\heroku\node_modules\twilio\lib\base\Version.js:135:15)
+    at Promise_then_fulfilled (C:\Users\Tomy puto\Desktop\heroku\node_modules\q\q.js:766:44)
+    at Promise_done_fulfilled (C:\Users\Tomy puto\Desktop\heroku\node_modules\q\q.js:835:31)
+    at Fulfilled.Fulfilled_dispatch [as dispatch] (C:\Users\Tomy puto\Desktop\heroku\node_modules\q\q.js:1229:9)
+    at Pending_become_eachMessage_task (C:\Users\Tomy puto\Desktop\heroku\node_modules\q\q.js:1369:30)
+    at RawTask.call (C:\Users\Tomy puto\Desktop\heroku\node_modules\asap\asap.js:40:19)
+    at flush (C:\Users\Tomy puto\Desktop\heroku\node_modules\asap\raw.js:50:29)
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+  status: 401,
+  code: 20003,
+  moreInfo: 'https://www.twilio.com/docs/errors/20003',
+  details: undefined
+}
